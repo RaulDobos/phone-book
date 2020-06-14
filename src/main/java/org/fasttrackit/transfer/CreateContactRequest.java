@@ -1,18 +1,10 @@
-package org.fasttrackit.domain;
+package org.fasttrackit.transfer;
 
-public class Contact {
-    private long id;
+public class CreateContactRequest {
+
     private String firstName;
     private String lastName;
     private String phoneNumber;
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getFirstName() {
         return firstName;
@@ -40,9 +32,8 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Contact{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
+        return "CreateContactRequest{" +
+                "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 '}';
